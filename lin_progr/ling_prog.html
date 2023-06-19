@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Linguagem de Programação</title>
+    <link rel="stylesheet" href="/lin_progr/ling_pro.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+          
+          <!--  <div class="imagem">
+            <img src="/img/senai-logo-cinza.png">
+          </div>-->
+
+            <div class="flex">
+                
+                
+                <!--<a href="inicio.html"><img src="/inicio/img/fotoboacortada.jpg"></a>-->
+
+                    <div class="btn-inicio">
+                        <a href="/inicio/inicio.html"><button>INÍCIO</button></a>
+                    </div> <!--btn-inicio-->
+
+                    <nav>
+                        <ul>
+                            
+                            <li><a href="/auto/auto.html">Automação</a></li>
+                            <li><a href="/redes/rede.html">Redes</a></li>
+                            <li><a href="/banco/banco.html">Banco de Dados</a></li>
+                            <li><a href="/ciencia/ciencia.html">Ciência de Dados</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="btn-contato">
+                        <a href="/lin_progr/ling_prog.html"><button>TOPO</button></a>
+                    </div> <!--btn-contato-->
+
+
+            </div> <!--flex-->
+
+        </div> <!--container-->
+
+
+    </header>
+
+    <section class="banner"> 
+        <h1><span class="auto-escrita"></span></h1>
+    </section>
+
+    <div class="quadro0"></div>
+
+    
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont1')">METOLOGIA SCRUM</button><span style="color: red;"> (Click)</span></h1>
+        <div id="cont1">
+            <p>É uma metodologia ágil que tem como base desenvolver um projeto em “sprints” que seriam etapas, com reuniões diárias e reuniões no fim de cada sprint com feedbacks para melhoria continua do projeto. Há diversos papéis dentro de um projeto que usa scrum. </p>
+            <br>
+            <h1 class="tit2"><button onclick="toggle('cont11')">SCRUM MASTER</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont11">
+                    <ul>
+                        <li><span>É o responsável pelo objetivo final do produto ou seja, é o líder/gerente do projeto. Também toma as principais decisões em relação ao projeto.</span></li>
+                    </ul>
+                </div>
+                <br>
+                <h1 class="tit2"><button onclick="toggle('cont12')">Product Owner</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont12">
+                    <ul>
+                        <li><span>É quem irá providenciar o necessário para a equipe consegui desenvolver e realizar as entregas no tempo previsto. Ele também tem um papel de liderança.</span></li>
+                    </ul>
+                </div>
+                <br>
+                <h1 class="tit2"><button onclick="toggle('cont13')">Scrum team</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont13">
+                    <ul>
+                        <li><span>A equipe de desenvolvimento ou Scrum Team são aqueles envolvidos no projeto que são encarregados de desenvolver o projeto.</span></li>
+                    </ul>
+                </div>
+                <br>
+            </div>   
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont2')">VS CODE</button><span style="color: red;"> (Click)</span></h1>
+            <p id="cont2">IDE para desenvolvimento de códigos. Escolhemos ela por que é muito versátil e mundialmente utilizada. Instalamos algumas extensões que nos auxiliaram a desenvolver de maneira mais produtiva. </p>
+            
+        </div>
+    </section>
+    
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont3')">Tags de HTML</button><span style="color: red;"> (Click)</span></h1>
+            <p id="cont3">Entendemos sobre as tags em HTML, para que cada uma serve, e ao longo do entendimento, fomos aplicando ao longo da página da receita. Alguns exemplos: &lt;head&gt;,&lt;body&gt;, &lt;p&gt;,&lt;h1&gt;,&lt;br&gt;.  </p>
+            
+        </div>
+    </section>
+    
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont4')">GITHUB e GITBASH</button><span style="color: red;"> (Click)</span></h1>
+            <p id="cont4">Instalamos o GitBash e aprendemos a criar repositórios no GitHub. Fazendo uso do GitBash para subir(push) ou baixar (pull) arquivos do GitHub, além de possibilitar o versionamento de arquivos, que é extremamente importante nessa área de desenvolvimento, também nos permite criar nosso próprio portifólio.</p>
+            
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont5')">HTML SEMÂNTICO</button><span style="color: red;"> (Click)</span></h1>
+            <p id="cont5">Fomos apresentados ao HTML semântico, que trás uma padronização da página WEB, com tags especiais como &lt;header&gt; que seria o cabeçalho, &lt;footer&gt; que é o rodapé, &lt;article&gt;,&lt;section&gt;, entre outros. Usando essas tags, fica bem mais ágil e fácil de manipular o conteúdo da página para atender ao que queremos modelar.</p>
+            
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont6')">DOM</button><span style="color: red;"> (Click)</span></h1>
+            <p id="cont6">Sistema hierárquico de árvore invertida que trás conceitos de tags pais e tags filhas, como a tag &lt;html&gt; é pai, enquanto que as que estão dentro dela, como &lt;body&gt; e &lt;head&gt; são filhas. Isso se replica para as demais tags, como a do &lt;body&gt;, tudo que está dentro dela é filha e assim por diante. Sua principal função é permitir a manipulação da página WEB.</p>
+            
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont7')">JS</button><span style="color: red;"> (Click)</span></h1>
+            <p id="cont7">É uma linguagem de programação voltada ao desenvolvimento WEB. Ela nos permite deixar a página mais dinâmica e com melhor performance. Anda em conjunto com as HTML e CSS normalmente. Usamos ela tanto para fazer exercícios matemáticos quanto manipulação de página.</p>
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont222')">Conceitos de programação</button><span style="color: red;"> (Click)</span></h1>
+            
+            <div id="cont222">
+                <h1 class="tit2"><button onclick="toggle('cont223')">O que é sintaxe</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont223">
+                        <p>Maneira como é escrito o código de um comando.</p>
+                </div>
+                
+                <h1 class="tit2"><button onclick="toggle('cont224')">Variável</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont224">
+                        <p>É um local na memória que usamos para guardar algum tipo de informação para uso posterior. Seguindo padrões, conseguimos dar o nome que quisermos a esse local.</p>
+                </div>
+
+                <h1 class="tit2"><button onclick="toggle('cont225')">Concatenação</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont225">
+                        <p>Junta um conjunto de caracteres a outro.</p>
+                        <br>
+                        <p>String + String</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont8')">Operadores</button><span style="color: red;"> (Click)</span></h1>
+            
+            <div id="cont8">
+                <h1 class="tit2"><button onclick="toggle('cont81')">atribuição</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+            <div id="cont81">
+            <figure>
+                <img src="/img/atribuicao.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+            </div>
+            <br>
+            <h1 class="tit2"><button onclick="toggle('cont82')">Aritmético</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+            <div id="cont82">
+            <figure>
+                <img src="/img/aritmeticos.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+            </div>
+            <br>
+            <h1 class="tit2"><button onclick="toggle('cont83')">condicionais</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+            <div id="cont83">
+            <figure>
+                <img src="/img/relacionais.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+            </div>
+            <br>
+            <h1 class="tit2"><button onclick="toggle('cont84')">Lógicos</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+            <div id="cont84">
+            <figure>
+                <img src="/img/logicos1.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+            </div>
+            <br>
+            <h1 class="tit2"><button onclick="toggle('cont84')">Ternário</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+            <div id="cont84">
+            <figure>
+                <img src="/img/ternario.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont9')">Estruturas condicionais</button><span style="color: red;"> (Click)</span></h1>
+            <div id="cont9">
+                <ul>
+                        <li><span>IF</span> - Se a condição dentro for verdadeira, executa o bloco de código.</li>
+                        <li><span>ELSE IF</span>  - Se a condição IF não for verdadeira, verifica se a condição dentro do ELSE IF é verdadeira, se for, executa o bloco de código interno dele.</li>
+                        <li><span>ELSE</span> -  Se a condição IF e a do ELSE IF não for verdadeira, executa o bloco de código do ELSE.</li>
+                        <li><span>SWITCH CASE</span> - Estrutura que usa a sintaxe CASE para se caso algo for true ou false, realiza o bloco de código interno do CASE. Dentro de um SWITCH CASE, pode existir diversos CASES.</li>
+                    </ul>
+                </div> 
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont10')">Estrutura de Repetição</button><span style="color: red;"> (Click)</span></h1>
+            <div id="cont10">
+                        <ul>
+                        <li><span>FOR</span> - Para repetição do bloco de código com limite de vezes determinado.</li>
+                        <li><span>WHILE</span>  -  Para repetição do bloco de código enquanto a condição seja verdadeira até se tornar falso. Pode ser executado no mínimo nenhuma vez.</li>
+                        <li><span>DO WHILE</span> -  É executado no mínimo uma vez o bloco interno e se for verdadeira a condição, continua a repetir o bloco de código até se tornar falso.</li>
+                        <li><span>FOREACH</span> -  Repete o bloco de código para cada item de um array.</li>
+                    </ul>
+                </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont122')">História do Computador</button><span style="color: red;"> (Click)</span></h1>
+            
+            <div id="cont122">
+                        <p>O primeiro computador, que tinha o tamanho de uma sala, surgiu na época da segunda guerra mundial, para decifrar códigos de comunicação, mas há outros projetos muito mais antigos que tinham a função de calcular também, mas com componentes mecânicos e alto nível de complexidade que permitiram o surgimento dessa ideia.</p>
+        </div>
+        </div>
+    </section>
+
+    <section class="conteudo2">
+            <div class="projeto2">        
+                <figure>
+                    <video heigth="100%" width="100%" controls src="/lin_progr/videos/curriculo_apresentacao.mp4"></video>
+                    <figcaption>Projeto 1</figcaption>
+                </figure>
+                <div class="quadro2">
+                    <p style="color: aliceblue;font-weight: bold;">1º Curriculo e Apresentação</p><br>
+                    <p>Montagem do currículo e carta de apresentação usando HTML e CSS, que trouxe a estilização para a página. Cada pessoa montou o seu, trazendo bastante diversidade na apresentação. Entendemos melhor como usar a tag div que separa a página em contêineres. Facilitando a montagem da página usando CSS para manipula-las da maneira que queríamos.<p>
+                </div>
+            </div>
+    </section>
+
+    <section class="conteudo3">
+        <div class="projeto3">        
+            <div class="quadro3 ">
+                <p style="color: aliceblue;font-weight: bold;">METODOLOGIA SCRUM</p><br>
+                <p>Fizemos uma aula diferente, onde tínhamos de criar uma cidade de LEGO. Os edifícios foram listados na lousa e a localização dos edifícios foram ditados pelo professor. Foi uma atividade bem diferente, porém nos treinou dentro da metodologia SCRUM.<p>
+            </div>
+            <figure>
+                <video heigth="100%" width="100%" controls src="/lin_progr/videos/lego_video.mp4"></video>
+                <figcaption>Projeto 2</figcaption>
+            </figure>
+        </div>
+</section>
+
+<section class="conteudo2">
+    <div class="projeto2">        
+        <figure>
+            <video heigth="100%" width="100%" controls src="/lin_progr/videos/exercicio_js.mp4"></video>
+            <figcaption>Projeto 3</figcaption>
+        </figure>
+        <div class="quadro2">
+            <p style="color: aliceblue;font-weight: bold;">Exercícios de matemática usando JavaScript</p><br>
+            <p>Usando o JS, tivemos algumas aulas sobre como utiliza-lo para fazer contas matemáticas diversas e de começo, utilizamos o console para mostrar as informações que queríamos ver, então após praticar um pouco, o professor nos passou uma lista de exercícios para resolvermos. Então utilizamos estruturas de repetição e até funções. O exercício mais interessante foi desenvolver uma calculadora, que coletava os números e realizava uma das operações básicas, e por fim, devolvia o resultado no console.<p>
+        </div>
+    </div>
+</section>
+
+<section class="conteudo3">
+    <div class="projeto3">        
+        <div class="quadro3 ">
+            <p style="color: aliceblue;font-weight: bold;">Calculadora de folha de pagamento</p><br>
+            <p>Ainda usando o JS, foi proposto para cada Squad desenvolver uma calculadora de impostos básica, que coletava algumas informações do usuário, como salário bruto, quantos dependentes a pessoa tinha e encima dessas informações, mostrava o resultado de cada um dos cálculos relacionados aos impostos. A Squad foi separada por funções para agilizar o processo de desenvolvimento.<p>
+        </div>
+        <figure>
+            <video heigth="100%" width="100%" controls src="/lin_progr/videos/calculadora_impostos.mp4"></video>
+            <figcaption>Projeto 4</figcaption>
+        </figure>
+    </div>
+</section>
+
+    <footer>
+       
+        <div class="rodape">
+            <figure>
+                <a href="https://sorocaba.sp.senai.br/">
+                    <img src="/img/senai-logo.png">
+                </a>    
+            </figure>
+        </div>
+
+        <div class="frase_rodape">
+            <h1> Direitos reservados ao SENAI - Gusta Oliver </h1>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/lin_progr/lin.js"></script>
+    
+
+</body>
+</html>

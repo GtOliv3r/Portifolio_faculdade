@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Banco de Dados</title>
+    <link rel="stylesheet" href="/banco/banco.css">
+</head>
+<body>
+
+    <style>
+        summary::-webkit-details-marker {
+          /* Estilos personalizados para o marcador */
+          color: red; /* Cor do marcador */
+          font-size: 20px; /* Tamanho da fonte do marcador */
+          /* Outros estilos de sua escolha */
+        }
+      </style>
+
+    <header id="header">
+        <div class="container">
+          
+          <!--  <div class="imagem">
+            <img src="/img/senai-logo-cinza.png">
+          </div>-->
+
+            <div class="flex">
+                
+                
+                <!--<a href="inicio.html"><img src="/inicio/img/fotoboacortada.jpg"></a>-->
+
+                    <div class="btn-inicio">
+                        <a href="/inicio/inicio.html"><button>INÍCIO</button></a>
+                    </div> <!--btn-inicio-->
+
+                    <nav>
+                        <ul>
+                            
+                            <li><a href="/lin_progr/ling_prog.html">Linguagem de Programação</a></li>
+                            <li><a href="/auto/auto.html">Automação</a></li>
+                            <li><a href="/redes/rede.html">Redes</a></li>
+                            <li><a href="/ciencia/ciencia.html">Ciência de Dados</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="btn-contato">
+                        <a href="/banco/banco.html"><button>TOPO</button></a>
+                    </div> <!--btn-contato-->
+
+
+            </div> <!--flex-->
+
+        </div> <!--container-->
+
+
+    </header>
+
+
+    <section class="banner"> 
+        <h1><span class="auto-escrita"></span></h1>
+    </section>
+
+    <div class="quadro0"></div>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont0')">O que é um Banco de Dados</button><span style="color: red;"> (Click)</span></h1>
+            <p id="cont0">É uma estrutura física onde os dados / informação é mantida por um período de tempo incerto,
+                 e são utilizados sistemas para gerenciar este banco. No 1º Semestre desenvolvemos somente a parte de BD relacional</p>
+        </div>
+    </section>
+
+
+    <section class="conteudo1">
+        <div class="quadro1">
+                <h1 class="tit"><button onclick="toggle('cont1')"> 4 pilares do BD relacional (ACID)</button><span style="color: red;"> (Click)</span></h1>
+                    <ul id="cont1">
+                        <li><span>Atomicidade</span> - Seria garantia de que a transação será feita totalmente ou não será feita.
+                        <li><span>Consistência</span>  - Seria a proteção da integridade dos dados.</li>
+                        <li><span>Isolamento</span> - A capacidade de isolamento seria o fato de uma transação não atrapalhar a outra e ocorrer de forma isolada, garantindo que sejam feitas de forma individual.</li>
+                        <li><span>Durabilidade</span> - A capacidade de garantir a preservação dos dados após transações, mesmo se problemas ocorram no processo. </li>
+                    </ul>   
+            </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button onclick="toggle('cont2')">MODELAGEM DE BD</button><span style="color: red;"> (Click)</span></h1>
+                <div id="cont2">
+                    <p>Usado para planejar o banco de dados antes do seu desenvolvimento, para obter maior performance no banco e ser mais eficiente. Motivos de por que modelar: Eficiência e Clareza, ou seja, ganha-se tempo ao realizar esse trabalho primeiro.</p>
+                    <br>
+                    <h1 class="tit2"><button onclick="toggle('cont21')">DEFINIÇÕES</button><span style="color: red;"> (Click)</span></h1>
+                    <br>
+                        <div id="cont21">
+                            <ul>
+                                <li><span>SQEL</span> - Structed english query language </li>
+                                <li><span>SQL </span>  - Structured query language </li>
+                                <li><span>SGBD </span> - Sistema de Gerenciamento de Banco de Dados. São alguns deles: Oracle, my SQL, SQL, Server, PostGree </li>
+                                <li><span>BR Modelo</span> -  Facilita a conversão do modelo condicional para o modelo lógico. DRAW IO ONLINE, OracleDesigner tm (Oracle), e mais alguns. </li>
+                                <li><span>SEQL</span> - Structured English Query Language</li>
+                                <li><span>SQL</span> - Structured Query Language</li>
+                                <li><span>SGBD's</span> - Sistemas de Gerenciamento de Banco de Dados</li>
+                                <li><span>BR Modelo</span> - Facilita a conversão do modelo condicional para o modelo lógico. Qualquer outro pode ser usado.</li>
+                                <li><span>Modelo domínio</span> - Foca no entendimento do sistema.</li>
+                                <li><span>BR Modelo</span> - Facilita a conversão do modelo condicional para o modelo lógico. Qualquer outro pode ser usado.</li>
+                                <li><span>Mini-Mundo</span> - É um recorte do mundo real. Representação da aplicação.</li>
+                                <li><span>ABSTRAÇÃO</span> - É isolar um aspecto de um todo com maior complexidade. Descrever o que precisa acontecer. Quanto mais detalhado, melhor.</li>
+                                <li><span>MER</span> - Modelo Entidade Relacionamento: É um modelo conceitual que descreve os objetos (entidades), suas características (atributos) e como se relacionam.</li>
+                                <li><span>DER</span> - Diagrama Entidade Relacionamento: Representação gráfica do MER.</li>
+                                <li><span>Entidade</span> - São objetos únicos do mundo real (concretos ou abstratos).</li>
+                            </ul>
+                        </div> 
+            </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button onclick="toggle('cont3')">TIPOS DE ENTIDADES, ATRIBUTOS E RELACIONAMENTOS</button><span style="color: red;"> (Click)</span></h1>
+            <div id="cont3">
+
+                <h1 class="tit2"><button onclick="toggle('cont31')">DEFINIÇÕES</button><span style="color: red;"> (Click)</span></h1>
+                    <br>
+                        <div id="cont31">
+                <p><span>Entidades fortes</span> - São aquelas cuja existência independe de outras entidades, ou seja, por si só elas já possuem total sentido de existir. Pode ou não ter participação total no relacionamento.</p>
+                <figure>
+                    <img src="/img/ent_fort.png" width="15%" height="15%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                </figure>
+                <p><span>Entidades fracas</span> - Quando uma entidade precisa de outra para existir, ela é designada por entidade fraca.</p>
+                <figure>
+                    <img src="/img/ent_frac.png" width="15%" height="15%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                </figure>
+                <p>OBS: Depende da abstração do ESCOPO, o que o cliente determinar como âncora, você parte desse ponto a abstração. </p>
+            </div> 
+                
+            <h1 class="tit2"><button onclick="toggle('cont32')">ATRIBUTOS</button><span style="color: red;"> (Click)</span></h1>
+                    <br>
+                        <div id="cont32">
+            <ul>
+                    <li><span>Atributo Simples</span> - Atributo atômico, ou seja, atributos únicos.</li>
+                    <li><span>Atributo Composto</span> - Atributo que possui diversas informações diferentes, como endereço que possui rua, número da casa, CEP, cidade e estado, bairro.</li>
+                    <li><span>Atributo Multivalorado</span> - Atributo que possui diversas informações do mesmo tipo - como telefones diferentes. Por exemplo, em um exemplo de aluno, um aluno pode possuir vários telefones.</li>
+                    <li><span>Atributo Derivado</span> - Atributo que depende de outro atributo ou outra entidade para poder existir. Por exemplo, a "idade" depende da "data de nascimento" para existir.</li>
+                    <li><span>Chave primária (PK)</span> - Só pode existir um registro, no caso de nós aqui da sala, CPF ou CNPJ seria uma chave primária. Cada um é único.</li>
+                    <li><span>Chave estrangeira (FK)</span> - PK herdada de outra tabela, usada para relacionar uma tabela a outra(s).</li>
+                </ul>
+            </div>
+                <h1 class="tit2"><button onclick="toggle('cont33')">CARDINALIDADE</button><span style="color: red;"> (Click)</span></h1>
+                <br>
+                    <div id="cont33">
+                <p><span>Cardinalidade</span> - Como as entidades vão se relacionar</p>
+                <ul>
+                    <li><span>1:1</span> - 1 entidade só conversa com 1 entidade.</li>
+                    <li><span>1:n</span> - 1 entidade conversa com n entidades diferentes.</li>
+                    <li><span>n:m</span> - Diferentes entidades falam com N diferentes entidades.</li>
+                </ul>
+                <p>OBS: O básico para esclarecer sobre as entidades e seus relacionamentos está nas perguntas que são feitas ao cliente, ou seja, quanto melhor pensado as questões, melhor será a abstração do projeto e melhor para construir um banco de dados.</p>
+                <p><span>Como interpretar :</span></p>
+                <br>
+                <p>Mínima:</p>
+                <ul>
+                    <li>No mínimo 1 cliente pode fazer um pedido.</li>
+                    <li>Um pedido deve ser feito por no mínimo um cliente.</li>
+                </ul>
+                <br>
+                <p>Máxima:</p>
+                <br>
+                <ul>
+                    <li>Um cliente pode fazer N pedidos.</li>
+                    <li>N pedidos podem ser feitos por 1 cliente.</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button onclick="toggle('cont4')">Modelos de BD</button><span style="color: red;"> (Click)</span></h1>
+            <div id="cont4">
+                <h1 class="tit2"><button onclick="toggle('cont41')">Modelo Conceito</button><span style="color: red;"> (Click)</span></h1>
+                <br>
+            <div id="cont41">
+            <p>Diagramas ER (Entidade e Relacionamento) ou de Classes<p>
+                <figure>
+                    <img src="/img/MER.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                    <figcaption>MODELO LÓGICO DO BD DO TITANIC  ( LEGENDA: Amarelo → PK; Cinza → FK; Amarelo e Cinza → PK composta)</figcaption>
+                </figure>
+            <br>
+        </div>
+            <h1 class="tit2"><button onclick="toggle('cont42')">Modelo lógico</button><span style="color: red;"> (Click)</span></h1>
+                    <br>
+                <div id="cont42">
+            <p>Modelo onde montamos tabelas com cada linha representando uma coluna da entidade dentro do banco de dados e nessas linhas colocamos: <p>
+             <ul>
+                <li>O tipo de atributo que é;</li>
+                <li>As regras desses atributos;</li>
+                <li>Se devem ser nulos ou não;</li>
+                <li>Colocamos uma representação.</li>
+                <li>O relacionamento e cardinalidade entre as entidades</li>
+             </ul>   
+             <p>Podemos ver melhor as características listadas acima na imagem abaixo:</p>
+             <figure>
+                <img src="/img/MOD_LOG.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                <figcaption>MODELO LÓGICO DO BD DO TITANIC  ( LEGENDA: Amarelo → PK; Cinza → FK; Amarelo e Cinza → PK composta)</figcaption>
+            </figure>
+            <br>
+        
+            
+                </ul>
+            <p>Convertendo modelo conceitual em modelo lógico:</p>
+                <ul>
+                    <li><span>Entidade</span> - Tabela</li>
+                    <li><span>Atributos</span> - Colunas da tabela</li>
+                    <li><span>Relacionamentos</span> - Compartilhamento de chaves entre entidades</li>
+                    <li><span>Cardinalidade</span> - Define qual entidade receberá a chave primária da entidade com a qual se relaciona</li>
+                
+                    <p><span>Observações:</span></p>
+                    <li>Quando uma entidade herda a chave primária de outra entidade, esta passa a se chamar chave estrangeira</li>
+                    <li>As entidades normalmente são substantivos</li>
+                    <li>Em um relacionamento 1 para N, a entidade cujo máximo receba o N, automaticamente essa entidade é fraca. Pois ela irá receber uma FK (chave estrangeira).</li>
+                    <li>É interessante decidirmos a cardinalidade primeiro para depois ver qual entidade é fraco ou forte;</li>
+                </ul>
+                </div>
+                <h1 class="tit2"><button onclick="toggle('cont43')">Modelo Físico</button><span style="color: red;"> (Click)</span></h1>
+                    <br>
+                <div id="cont43">
+                
+                <p>Seria a parte da implementação de todas as informações reunidas no banco de dados em si, criação das entidades e seus atributos, chaves
+                     primárias e estrangeiras para os relacionamentos, povoar as entidades com os dados e por fim, as pesquisas para verificar se está tudo corretamente relacionado. 
+                     Portanto podemos dizer que seria a implementação do banco de dados real. Criamos fazendo uso dos comandos SQL. <p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button onclick="toggle('cont5')">Comandos SQL</button><span style="color: red;"> (Click)</span></h1>
+            <div id="cont5">
+
+                <h1 class="tit2"><button onclick="toggle('cont51')">Comandos DDL</button><span style="color: red;"> (Click)</span></h1>
+                <br>
+            <div id="cont51">
+                
+                
+                <ul>
+                    <li><span>CREATE TABLE</span> - Cria a tabela</li>
+                    <li><span>ALTER TABLE</span> - Altera nome da tabela e do atributo, o tipo de atributo, adiciona e altera as restrições do atributo, adiciona ou apaga colunas, entre outros</li>
+                    <li><span>DROP TABLE</span> - Deleta a tabela. Se tiver dados, eles são apagados também</li>
+                </ul>
+            </div>
+
+            <h1 class="tit2"><button onclick="toggle('cont52')">Comandos DML</button><span style="color: red;"> (Click)</span></h1>
+                <br>
+            <div id="cont52">
+                
+                <ul>
+                    <li><span>INSERT</span> - Insere dados na tabela</li>
+                    <li><span>UPDATE</span> - Atualiza dados dentro da tabela</li>
+                    <li><span>DELETE</span> - Deleta dados da tabela. Cuidado com o WHERE → Pois sem, todas os dados da tabela em si são apagados</li>
+                    <li><span>SELECT</span> - Visualiza todas as colunas da tabela em questão</li>
+                  </ul>
+                  </div>
+
+                  <h1 class="tit2"><button onclick="toggle('cont53')">Comandos DQL</button><span style="color: red;"> (Click)</span></h1>
+                <br>
+            <div id="cont53">
+                  
+                  <ul>
+                    <li><span>SELECT</span> - Visualiza a(s) tabela(s). É possível visualizar as tabelas de diversas maneiras diferentes usando os comandos abaixo.</li>
+                    <li><span>OPERADORES SQL</span> - Operadores lógicos, comparação, matemáticos e predicados de comparação.</li>
+                    <li><span>FUNÇÕES SQL</span> - Funções de agregação, matemáticas, trigonométricas, string functions.</li>
+                    <li><span>ORDER BY</span> - Ordena dados no SELECT baseado em algo.</li>
+                    <li><span>JOIN</span> - Junta colunas ou tabelas específicas em uma só no SELECT.</li>
+                    <li><span>GROUP BY</span> - Agrupa dados no SELECT baseado em algo.</li>
+                    <li><span>INTERSECT, UNION, EXCEPT</span> - Intersecção, união e exceção.</li>
+                    <li><span>ALIASES</span> - Apelida tabelas ou colunas para facilitar em comandos simples e mais complexos.</li>
+                  </ul>
+            </div>
+
+                  <h1 class="tit2"><button onclick="toggle('cont54')">Comandos DTL</button><span style="color: red;"> (Click)</span></h1>
+                <br>
+            <div id="cont54">
+                  
+                  <ul><li>BEGIN TRANSACTION, COMMIT E ROLLBACK - Comandos para controle de transação.</li></ul>
+                  </div>
+
+                  <h1 class="tit2"><button onclick="toggle('cont55')">Comandos DCL</button><span style="color: red;"> (Click)</span></h1>
+                <br>
+            <div id="cont55">
+        
+                  <ul><li>GRANT, REVOKE E DENY - Comandos para controle de dados.</li></ul>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="conteudo1">
+        <div class="quadro1">
+                <h1 class="tit"><button onclick="toggle('cont6')">NORMALIZAÇÃO</button><span style="color: red;"> (Click)</span></h1>
+                   <div id="cont6"> 
+                    <h1 class="tit2"><button onclick="toggle('cont61')">1ª FORMA NORMAL</button><span style="color: red;"> (Click)</span></h1>
+                <br>
+            <div id="cont61">
+                        <ul>
+                            
+                            <li>Todos os atributos que são compostos devem ser quebrados em mais atributos para que cada 
+                                célula tenha somente um valor e os multivalorados tem que tornar atributos de uma entidade
+                                nova, cria-se uma PK nova e a relaciona com quem necessita.</li>
+                            </div>
+
+                            <h1 class="tit2"><button onclick="toggle('cont62')">2ª FORMA NORMAL</button><span style="color: red;"> (Click)</span></h1>
+                <br>
+            <div id="cont62">
+                            
+                            <li>O banco tem que estar na 1ª forma normal.</li>
+                            <li>Todos os atributos de uma tabela fora a PK tem que depender unicamente da PK composta da tabela.
+                                sem depender parcialmente de uma ou outra, e sim das duas em conjunto.</li>
+                            </div>
+
+                            <h1 class="tit2"><button onclick="toggle('cont63')">3ª FORMA NORMAL</button><span style="color: red;"> (Click)</span></h1>
+                <br>
+            <div id="cont63">
+                            
+                            <li>Banco precisa estar na 2ª forma normal;</li>
+                            <li>Cada atributo não pode depender de outro atributo que não seja a PK em si.</li>
+                        </ul>
+                        </div>
+                    </div>   
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+                <h1 class="tit"><button onclick="toggle('cont7')">OBSERVAÇÕES GERAIS</button><span style="color: red;"> (Click)</span></h1>
+                    <ul id="cont7">
+                        <li>O Banco de dados tem que ter a cara da aplicação, por que se não houver essa preocupação, 
+                            nos perdemos na hora de fazer o banco funcionar junto com a aplicação.</li>
+                        <li>No nosso caso, usamos PostGree, que o sistema de gerenciamento que a 2RP NET usa, ou seja, 
+                            aprendemos a usar esse sistema para ficar por dentro da ferramenta que a empresa usa</li>       
+        </div>
+    </section>
+
+    <section class="conteudo2">
+            <div class="projeto2">        
+                <figure>
+                    <video heigth="100%" width="100%" controls src="/banco/videos/Exercicio_BD.mp4"></video>
+                    <figcaption>Projeto 1</figcaption>
+                </figure>
+                <div class="quadro2">
+                    <p style="color: aliceblue;font-weight: bold;">Banco de Dados da Instituição Estudantil</p><br>
+                    <p>Fizemos em squad alguns exercícios de abstração desenhando diagramas, e com esse conhecimento, pegamos um deles e desenvolvemos a criação completa do banco com normalização até a 3ª forma normal. Objetivo desse projeto era criar uma banco para uma instituição estudantil, que tinha algumas regras que deviam ser respeitadas.<p>
+                </div>
+            </div>
+    </section>
+
+    <section class="conteudo3">
+        <div class="projeto3">        
+            <div class="quadro3 ">
+                <p style="color: aliceblue;font-weight: bold;">Banco de Dados do TITANIC</p><br>
+                <p>Nesse projeto, foi desenvolvido a normalização de um BD já existente, no caso, um banco das vítimas do acidente do TITANIC. Desenvolvi a parte de análise dos dados da tabela com objetivo de facilitar a normalização desse banco. Gostei bastante de desenvolver, pois com a análise, ficou muito mais facíl tomar as decisões<p>
+            </div>
+            <figure>
+                <video heigth="100%" width="100%" controls src="/banco/videos/TITANIC.mp4"></video>
+                <figcaption>Projeto 2</figcaption>
+            </figure>
+        </div>
+</section>
+
+    <footer>
+       
+        <div class="rodape">
+            <figure>
+                <a href="https://sorocaba.sp.senai.br/">
+                    <img src="/img/senai-logo.png">
+                </a>    
+            </figure>
+        </div>
+
+        <div class="frase_rodape">
+            <h1> Direitos reservados ao SENAI - Gusta Oliver </h1>
+        </div>
+
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/banco/banc.js"></script>
+    
+
+</body>
+</html>

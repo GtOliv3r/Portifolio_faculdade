@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+/* Configurações padrão para toda a página*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow9+', sans-serif;
+
+}
+
+/* Tamanho da página*/
+html {
+    height: 380vh;
+    background-image: url(/img/banco.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 15px; /* Largura da barra de rolagem */
+  }
+  
+  /* Estilizando o track da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255); /* Cor de fundo do track */
+  }
+  
+  /* Estilizando o thumb (alça) da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background:rgb(189, 4, 4); /* Cor do thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+  border: 4px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+  }
+  
+  /* Estilizando o thumb ao passar o mouse por cima */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #420101; /* Cor do thumb ao passar o mouse */
+  }
+
+.container {
+    max-width: 1920px;
+    margin: auto;
+
+}
+
+/* Controle das divs dentro da div flex*/
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+/* Animação dos links das matérias*/
+.flex li:hover {
+    transition: 0.3s;
+    -webkit-filter: drop-shadow(5px 5px 3px rgb(255, 255, 255));
+    filter: drop-shadow(10px 10px 3px rgb(255, 255, 255));
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+/*.flex img:hover{
+    transition: 0.3s;
+    width: 70px;
+    height: 70px;
+}*/
+
+/* Animação do botão contato */
+.flex button:hover {
+    transition: 0.3s;
+    font-size: large;
+    background-color: azure;
+    color: rgb(189, 4, 4);
+    font-weight: bold;
+}
+
+/* TOPO da tela */
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+/* Controla a animação do header ao descer a tela*/
+header.scrolling {
+    background-color: rgb(189, 4, 4);
+    padding: 20px 4%;
+}
+
+/* Controla a animação do header ao descer a tela so que nos links e o icone*/
+header.scrolling a {
+    color: azure;
+}
+
+/* animação da imagem desaparecendo
+.imagem img.hidden {
+    opacity: 0;
+  }
+  */
+
+/* Icone do TOPO*/
+
+.imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem img {
+    max-width: 100%;
+    /* Garante que a imagem não exceda o tamanho do container */
+    width: 10%;
+    /*opacity: 1;
+    transition: opacity 0.3s ease; */
+}
+
+header {
+    z-index: 9999;
+}
+
+/* config da Lista do TOPO (no caso as máterias)*/
+header ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Config das linhas da lista do TOPO*/
+header ul li {
+    display: inline-table;
+    margin: 0 40px;
+}
+
+/* Config dos links do TOPO*/
+header ul li a {
+    color: azure;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Configs do fundo da página*/
+.banner {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Config das escritas que ficam no banner de fundo*/
+.banner h1 {
+    font-size: 2.5em;
+    color: rgb(31, 85, 202);
+
+}
+
+.banner .auto-escrita {
+    background-color: rgba(34, 211, 235, 0.612);
+    border-radius: 5px;
+}
+
+/* Config do span das escritas do banner*/
+.banner h1 span {
+    color: azure;
+
+}
+
+/* Config principal do botão de contato*/
+.btn-contato button {
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    border: 0;
+    background-color: rgb(189, 4, 4);
+    color: azure;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+/* Config principal do botão de inicio*/
+.btn-inicio button {
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    border: 0;
+    background-color: rgb(189, 4, 4);
+    color: azure;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+conteudo1{
+    margin-bottom: 2%;
+    max-width: 100%;
+  }
+
+  .quadro0 {
+width: 100px;
+height: 100px;
+margin-left: auto;
+margin-right: auto;
+margin-top: -12%;
+
+}
+
+.quadro1:hover,.quadro2:hover,.quadro3:hover{
+    transition: 0.3s;
+    font-size: large;
+    background-color: rgba(41, 41, 41, 0.973);
+    color:aliceblue;
+    font-weight: bold;
+    
+}
+.quadro1 {
+    /*width: 100%;*/
+    background-color:  rgba(34, 211, 235, 0.612);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 80px;
+    padding: 20px;
+    /*display: inline-block;*/
+    border-radius: 15px;
+    color: aliceblue;   
+
+}
+
+.quadro1 h1.tit {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+
+.quadro1 h1.tit button,h1.tit2 button{
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+   cursor: pointer;
+   color: aliceblue;
+}
+
+.quadro1 p{
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.quadro1 p span{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+
+  .quadro1 figcaption{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: aliceblue;
+    text-align: center;
+  }
+
+  .quadro1 li{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    list-style-type: square;
+    line-height: 1.8;
+  }
+
+  .quadro1 li span{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: aliceblue;
+  }
+
+  #cont0{
+    display: none;
+}
+
+#cont1{
+    display: none;
+}
+
+#cont2{
+    display: none;
+}
+
+#cont3{
+    display: none;
+}
+
+#cont4{
+    display: none;
+}
+
+#cont5{
+    display: none;
+}
+#cont6{
+    display: none;
+}
+#cont7{
+    display: none;
+}
+#cont21{
+    display:none;
+}
+
+#cont31{
+    display:none;
+}
+#cont32{
+    display:none;
+}
+#cont33{
+    display:none;
+}
+#cont41{
+    display:none;
+}
+#cont42{
+    display:none;
+}
+#cont43{
+    display:none;
+}
+#cont51{
+    display: none;
+}
+#cont52{
+    display: none;
+}
+#cont53{
+    display: none;
+}
+#cont54{
+    display: none;
+}
+#cont55{
+    display: none;
+}
+#cont61{
+    display: none;
+}
+#cont62{
+    display: none;
+}
+#cont63{
+    display: none;
+}
+
+.tit2{
+    margin-top:20px ;
+    margin-left: 10px;
+}
+.tit2 img{
+    margin-left: 10px;
+}
+
+.tit2:hover{
+    transition: 0.2s;
+    font-size: 32px ;
+}
+
+
+
+
+.conteudo2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.projeto2 {
+    background-color: rgba(0, 0, 0, 0.774);
+    backdrop-filter: blur(10px);
+    
+
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.projeto2 video {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 2%;
+
+}
+
+.projeto2 figcaption {
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+
+.quadro2 {
+    background-color:  rgba(34, 211, 235, 0.612);
+    margin-left: 70px;
+    margin-right: 30px;
+    padding: 20px;
+    
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.conteudo3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.projeto3 {
+    background-color: rgba(0, 0, 0, 0.774);
+    backdrop-filter: blur(10px);
+    
+
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.projeto3 video {
+    margin-top: 30px;
+    margin-left: -30px;
+    margin-right: 30px;
+    border-radius: 2%;
+}
+
+.projeto3 figcaption {
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+
+.quadro3 {
+    background-color:  rgba(34, 211, 235, 0.612);
+    margin-left: 30px;
+    margin-right: 70px;
+    padding: 20px;
+    
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.868);
+    display: flex;
+    flex-direction: column;
+    color: rgb(189, 4, 4);
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+footer img {
+    padding-top: 8px;
+    display: block;
+    margin: auto;
+    width: 10%;
+    height: 10%;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+
+footer .frase_rodape {
+    font-size: small;
+    margin-bottom: 5px;
+}

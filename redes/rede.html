@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Redes</title>
+    <link rel="stylesheet" href="/redes/rede.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+          
+          <!--  <div class="imagem">
+            <img src="/img/senai-logo-cinza.png">
+          </div>-->
+
+            <div class="flex">
+                
+                
+                <!--<a href="inicio.html"><img src="/inicio/img/fotoboacortada.jpg"></a>-->
+
+                    <div class="btn-inicio">
+                        <a href="/inicio/inicio.html"><button>INÍCIO</button></a>
+                    </div> <!--btn-inicio-->
+
+                    <nav>
+                        <ul>
+                            
+                            <li><a href="/lin_progr/ling_prog.html">Linguagem de Programação</a></li>
+                            <li><a href="/auto/auto.html">Automação</a></li>
+                            <li><a href="/banco/banco.html">Banco de Dados</a></li>
+                            <li><a href="/ciencia/ciencia.html">Ciência de Dados</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="btn-contato">
+                        <a href="/redes/rede.html"><button>TOPO</button></a>
+                    </div> <!--btn-contato-->
+
+
+            </div> <!--flex-->
+
+        </div> <!--container-->
+
+
+    </header>
+
+    <section class="banner"> 
+        <h1><span class="auto-escrita"></span></h1>
+    </section>
+
+    <div class="quadro0"></div>
+
+
+    
+    <section class="conteudo1">
+        <div class="quadro1">
+
+
+            <h1 class="tit"><button onclick="toggle('cont1')">O que é REDE?</button><span style="color: red;"> (Click)</span></h1>
+        <div id="cont1">         
+            <br>
+                <p>Podemos definir que REDE seria a comunicação ou troca de recursos entre 2 ou mais equipamentos diferentes, desde computadores, switches, roteadores, celulares, entre outros. <p>  
+            
+
+            <h1 class="tit2"><button onclick="toggle('cont12')">Tipos de Redes</button><span style="color: red;"> (Click)</span></h1>
+                    <br>
+                    <div id="cont12">
+                    <ul>
+                        <li><span>PAN</span> - Personal Area Network - Rede pessoal</li>
+                        <li><span>LAN</span> - Local Area Network - Rede local</li>
+                        <li><span>MAN</span> - Metropolitan Area Network - Rede metropolitana</li>
+                        <li><span>WAN</span> - Wide Area Network - Rede de longa distância</li>
+                    </ul>
+                </div>
+                    <br>
+                    <h1 class="tit2"><button onclick="toggle('cont13')">TOPOLOGIAS</button><span style="color: red;"> (Click)</span></h1>
+                    <br>
+                <div>
+                    <ul id="cont13">
+                        <ul>
+                            <li><span>O que é Topologia</span> - é um termo para designar a configuração assumida pelos computadores de uma rede ou seja, a forma como estes estão interligados.</li>
+                            <li><span>Topologia física</span> - refere-se à forma como os computadores e cabos de rede se interligam fisicamente na rede. A outra seria a <span>Topologia Lógica</span>, que refere-se ao modo como os dados circulam entre os computadores da rede.</li>
+                            <br><br>
+                            <p><span>Tipos de Topologia</span></p>
+                            <li><span>Barramento</span> - Computadores interligados por um cabo somente, porém somente um fala com o outro por vez, enquanto dois conversam, o restante fica “barrado” de conversar.</li>
+                            <li><span>Anel</span> - Essa topologia é como um anel mesmo, vários computadores conectados por um cabo somente, um computador está conectado sempre a outros 2. O tráfego de informações é em um sentido somente, por causa disso, se um computador falhar, toda a comunicação pode ser comprometida.</li>
+                            <li><span>Estrela</span> - Nesse tipo, todas as redes são conectadas por um dispositivo central, no caso Switch ou HUB. Por meio desse dispositivo, as estações podem se comunicar entre si. A sua grande vantagem é que se um dos dispositivos falhar, somente ele não irá funcionar, enquanto as outras ainda permanecem conectadas normalmente.</li>
+                            <li><span>Duplo Anel</span> - Mesma coisa do anel, porém como é mais de um cabo, a “conversa” fica ágil, com um cabo recebendo e outro enviando.</li>
+                            <li><span>Estrela Entendida</span> - Igual a estrela, porém um sistema de várias arquiteturas estrela interconectadas.</li>
+                            <li><span>Malha</span> - Dispositivos conectados entre si, cada dispositivo se interliga a todos os outros.</li>
+                            <li><span>Mista</span> - É uma mistura das arquiteturas anteriores interligadas.</li>
+                        </ul>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="conteudo1">
+        <div class="quadro1">
+                <h1 class="tit"><button onclick="toggle('cont2')">MODELOS TCP/IP E OSI</button><span style="color: red;"> (Click)</span></h1>
+                <div id="cont2">
+                <br>
+                <figure>
+                    <img src="/img/Modelos TCP OSI.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                    <figcaption>Comparando modelos TCP/IP e OSI</figcaption>
+                </figure>
+                <br>
+                    <h1 class="tit2"><button onclick="toggle('cont21')">MODELO TCP</button><span style="color: red;"> (Click)</span></h1>
+                    <br>
+                <div>
+                    <ul id="cont21">
+                        <ul>
+                            <p><span>CAMADAS:</span></p>
+                            <li><span>4.Aplicação</span> - É onde fica todas aplicações</li>
+                            <li><span>3.Transporte</span> - Controla o fluxo, envio e reagrupamento</li>
+                            <li><span>2.Internet</span> - Trabalha com o protocolo IP para gerenciar o roteamento dos pacotes de dados para os dispositivos das Redes.</li>
+                            <li><span>1.Acesso a Rede</span> - Usa um conjunto de protocolos para transmitir as informações em nível físico, ou seja, via cabos de ethernet, placas de rede, redes sem fio e etc.</li>
+                          </ul>
+                </div>
+                <br>
+                
+                    <h1 class="tit2"><button onclick="toggle('cont22')">MODELO OSI</button><span style="color: red;"> (Click)</span></h1>
+                    <br>
+                <div>
+                    <ul id="cont22">
+                        <ul>
+                            <p><span>CAMADAS</span></p>
+                            <li><span>7.Aplicação</span> - Aplicação para acesso de usuários aos serviços.</li>
+                            <li><span>6.Apresentação</span> - Formata os dados para a camada de aplicação.</li>
+                            <li><span>5.Sessão</span> - Trabalha em conjunto com a camada de transporte fornecendo recursos para controle dos caminhos utilizados pela mesma.</li>
+                            <li><span>4.Transporte</span> - Faz o controle dos pacotes de dados para transmissão na sequência correta e sem erros.</li>
+                            <li><span>3.Rede</span> - Decide o caminho físico mais eficiente que os dados devem ir com base em informações de prioridade do serviço e outras informações providas pela camada de Enlace. A principal função dessa camada é endereçar o IP de origem e de destino.</li>
+                            <li><span>2.Enlace</span> - Controla o fluxo de dados da camada física, faz a detecção de erros e os corrige para garantir que os dados sejam enviados de maneira correta. Nessa camada é trabalhado o endereço MAC, para que os dados sejam enviados somente ao dispositivo que requisitou os dados.</li>
+                            <li><span>1.Física</span> - Fica responsável por transmitir os dados em nível físico, ou seja, detecta os bits brutos dos meios físicos para poder enviá-los à camada de Enlace.</li>
+                          </ul>
+                </div>
+            </div>  
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button onclick="toggle('cont3')">CODIFICAÇÃO E TRANSMISSÃO</button><span style="color: red;"> (Click)</span></h1>
+                <div id="cont3">
+                    <br>
+                    <h1 class="tit2"><button onclick="toggle('cont31')">Padrões de codificação de Rede</button><span style="color: red;"> (Click)</span></h1>
+                    <br>
+                        <div id="cont31">
+                            <ul>
+                                <li><span>NRZ</span> - Interpreta somente valores 1.</li>
+                                <li><span>Manchester</span> - Dependendo de qual sinal vier, se for 1, ele mandará 0-1, se for 0, ele mandará 0-1.</li>
+                                <li><span>NRZI</span> - Interpreta a mudança, muda o estado do pulso somente nas mudanças de sinal, de 0 para 1 ou de 1 para 0.</li>
+                                <li><span>Clock</span> - Trabalha com frequências diferentes: 10/100/1000.</li>
+                              </ul>
+                        </div>
+                        <br>
+                            <h1 class="tit2"><button onclick="toggle('cont32')">Tipos de Transmissão</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont32">
+                            <ul>
+                                    <li><span>Transmissão Assíncrona</span> - Envia os dados separadamente com delimitadores de início e fim.</li>
+                                    <li><span>Transmissão Síncrona</span> - Enviam os dados em quadros sincronizados com um "relógio" compartilhado entre o receptor e o remetente.</li>
+                            </ul>
+                        </div>
+                            <br>
+                            <h1 class="tit2"><button onclick="toggle('cont33')">Meios de Transmissão</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont33">
+                            <ul>
+                                <li><span>Simplex</span> - Forma básica de transmissão, de uma via somente, não há como verificar se todos os dados chegaram ao receptor. Problemas na transmissão não são detectados nem corrigidos. Transmissão em TV aberta é um exemplo disso.</li>
+                                <li><span>Half Duplex</span> - Dados podem ser transmitidos nas duas direções, porém não ao mesmo tempo. A detecção de erros é possível. Comunicação de Walkie-Talkies é um exemplo disso.</li>
+                                <li><span>Full Duplex</span> - A melhor forma de transmissão. Os dados podem ser transmitidos e recebidos simultaneamente. Um bom exemplo é uma conexão de TV a cabo, em que você pode ver TV e navegar na internet ao mesmo tempo.</li>
+                              </ul>
+                        </div>
+
+                        <br>
+                            <h1 class="tit2"><button onclick="toggle('cont34')">Protocolos de transmissão</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont34">
+                            <ul>
+                                <li><span>HTTP (Hyper Text Transfer Protocol)</span> - Amplamente utilizado para transmitir informações entre um servidor web e um cliente, como páginas WEB por exemplo. Não possui criptografia.</li>
+                                <li><span>HTTPS (Hyper Text Transfer Protocol Security)</span> - Mesmo que o HTTP, só que é adicionada uma camada de segurança para não haver leitura dos dados por terceiros.</li>
+                                <li><span>FTP (File Transfer Protocol)</span> - Amplamente utilizado para transmitir arquivos entre um servidor e um cliente, mas sem criptografia.</li>
+                                <li><span>FTPS (File Transfer Protocol Security)</span> - Mesmo que o FTP, só que é adicionada uma camada de segurança para não haver interceptação dos dados por terceiros.</li>
+                              </ul>
+                        </div>
+                        <br>
+                </div>
+            </div>
+        </section>                  
+
+    <section class="conteudo1">
+        <div class="quadro1">
+                <h1 class="tit"><button onclick="toggle('cont4')">COMUNICAÇÃO</button><span style="color: red;"> (Click)</span></h1>
+                    <ul id="cont4">
+                        <h1 class="tit2"><button onclick="toggle('cont41')">TCP/UDP</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont41">
+                            <ul>
+                                <li><span>TCP</span> - Comunicação através de várias confirmações para garantir o envio completo de informações.</li>
+                                <li><span>UDP</span> - Envio sem a confirmação de quem está recebendo, não se sabe se a informação chegou ou não 100%, com um aumento na chance de perda de pacotes.</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <h1 class="tit2"><button onclick="toggle('cont42')">Tipos de comunicação</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont42">
+                            <ul>
+                                <li><span>Unicast</span> - Um dispositivo enviando mensagem para outro.</li>
+                                <li><span>Multicast</span> - Um dispositivo enviando mensagem para diversos outros.</li>
+                                <li><span>Broadcast</span> - Um computador enviando mensagem para todos os outros da rede.</li>
+                              <br>
+                                <li><span>TV Smart, celulares, computadores, celulares</span> - dispositivos finais</li>
+                                <li><span>Axis point, roteador, Switch</span> - dispositivos intermediários</li>
+                              </ul>
+                        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+                <h1 class="tit"><button onclick="toggle('cont5')">ENDEREÇAMENTO IP</button><span style="color: red;"> (Click)</span></h1>
+                    <ul id="cont5">
+                        <h1 class="tit2"><button onclick="toggle('cont51')">IPV4</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont51">
+                            <ul>
+                                <li>Cada endereço possui 32 bits, separados em quatro grupos de dois dígitos hexadecimais e pelo símbolo de “.” (ponto). Cada grupo varia entre os números 0 e 255. Possui um limite de 4.294.967.296 possiblidade. <span>Exemplo: 01010101.10101010.01010101.10101010li</span></li>
+                                </ul>
+                                    
+                            </div>
+
+                            <h1 class="tit2"><button onclick="toggle('cont52')">IPV6</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont52">
+                                <br>
+                                <ul>
+                                    <li>Cada endereço possui 128 bits, separados em oito grupos pelo símbolo “:” (dois pontos) , cada um contendo quatro dígitos hexadecimais. Cada grupo varia entre o número 0 e 65535. Ele contém muito mais possibilidades de endereço, um número próximo de 3,4 x 10^38 (dez elevado à 38ª potência). 
+                                    <span>Exemplo: 2001:0db8:85a3:0000:0000:8a2e:0370:7334</span></li>
+                                </ul>
+                        </div>
+                        <br>
+                            <ul>
+                                <span>Sempre há dois endereços padrões, como no exemplo:</span>
+                                <br><br>
+                                <li><span>10.0.0.0</span> -  endereço de rede (identificado pelo número 0 no fim) </li>
+                                <li><span>10.0.0.255</span> - endereço de broadcast (identificado pelo número 31 no fim)</li>
+                            </ul>
+                </div>     
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+                <h1 class="tit"><button onclick="toggle('cont6')">ENDEREÇO MAC</button><span style="color: red;"> (Click)</span></h1>
+                    <ul id="cont6">
+                        <p>É uma identificação única que é gravada em hardware por fabricantes de placa de rede, ou seja, computadores, celulares, roteadores, tablets, entre outros. Serve principalmente para diferenciar dispositivos em LAN, que aceita os pacotes de dado ou recusa se não for o endereço correspondente. Outras utilidades seria: controle de acesso, autenticação em redes wi-fi, rastreamento e monitoramento de dispositivos, solução de problemas de rede e gerenciamento de rede.</p>
+
+
+                        <li>END. MAC em formato IPV4: <span>00:1C:23:45:67:89</span></li>
+                        <li>END. MAC em formato IPV8: <span>00:1C:23:45:67:89:AB:CD:EF:00:11:22:33:44:55</span></li>
+                    </ul>               
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+                <h1 class="tit"><button onclick="toggle('cont7')">Conversão em binário</button><span style="color: red;"> (Click)</span></h1>
+                    <div id="cont7">
+                        <p>Divide o numero decimal por 2, calcula o resto, pega o resultado e continua dividindo por 2.</p>
+                        <p><span>DICA:</span> Quando todos os algarismos de um número em binário forem 1, o  valor deste número em decimal será igual ao peso do próximo algarismo mais significativo menos 1.</p>
+
+                        <br>
+                        <figure>
+                            <img src="/img/conversao.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                            <figcaption>Exemplo com número 127</figcaption>
+                        </figure>
+                    </div>             
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+                <h1 class="tit"><button onclick="toggle('cont8')">EQUIPAMENTOS</button><span style="color: red;"> (Click)</span></h1>
+                    <ul id="cont8">
+                        <h1 class="tit2"><button onclick="toggle('cont81')">PLACA DE REDE</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont81">
+                            <p>Os computadores se comunicam através da placa de rede, que seria o órgão de fala do computador. Ela controla todo o envio e recebimento de informações. Elas podem ser definidas por 3 características.</p>
+                            <br>
+                            <li><span>Taxa de Transmissão: </span> Placa Ethernet, que pode ser Ethernet comum, Fast e Giga, que suportam velocidades de transmissão de 10 Mbps, 100 Mbps, 1.000 Mbps, 10.000 Mbps.</li>
+                            <li><span>Cabos de Rede suportados: </span> Ethernet são compatíveis com cabos do tipo par trançado e coaxiais, Token Ring suporta somente par trançado e Fibra ótica.</li>  
+                            <li><span>Taxa de Transmissão: </span> Barramento ISA (Industry Standard Architecture),Barramento PC(Peripheral Component Interconnect), e mais outros.</li>        
+                        </div>
+
+                        <h1 class="tit2"><button onclick="toggle('cont82')">HUB</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont82">
+                            <p>É um dispositivo central que interliga diversos computadores, possui uma espécie de repetidor e envia sinais para todos os dispositivos conectados, a sua vantagem é que os dispositivos podem ser conectados ou desconectados enquanto ele está ligado, assim não há interrupção na comunicação.</p>       
+                        </div>
+
+                        <h1 class="tit2"><button onclick="toggle('cont83')">Switch</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont83">
+                            <p>É um dispositivo central parecido com o HUB, porém tem uma grande vantagem, ele consegue receber a informação e envia-la exclusivamente ao destinatário final. Detalhe muito importante para segurança. Também consegue armazenar uma lista de endereço MAC , que contribui para o envio ao destinatário correto.</p>       
+                        </div>
+
+                        <h1 class="tit2"><button onclick="toggle('cont84')">Roteador</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont84">
+                            <p>É o dispositivo que tem como principal função interligar uma rede em outra. Além disso, é possível que o roteador faça a função de Switch, mas de forma mais inteligente, procurando a melhor rota para fazer a comunicação.</p>       
+                        </div>
+                        
+                        <h1 class="tit2"><button onclick="toggle('cont85')">Repetidor de Sinal</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont85">
+                            <p> Serve para replicar o sinal de um equipamento com objetivo de alcançar outro equipamento longínquo, ele repete o sinal sem tratamento.</p>       
+                        </div>
+
+                        <h1 class="tit2"><button onclick="toggle('cont86')">GATEWAY</button><span style="color: red;"> (Click)</span></h1>
+                            <br>
+                        <div id="cont86">
+                            <p>É o componente necessário para que haja comunicação entre redes com protocolos e arquiteturas diferentes. Permitem traduzir os endereços e os formatos de mensagens presentes em redes diferentes.</p>       
+                        </div>
+                    </div>
+            </section>
+
+    <section class="conteudo2">
+            <div class="projeto2">        
+                <figure>
+                    <img heigth="100%" width="100%" src="/img/sala_deaula1.png">
+                    <figcaption>Projeto 1</figcaption>
+                </figure>
+                <div class="quadro2">
+                    <p>Duas infraestruturas iguais, só que simulando ambientes muito longe um do outro, no caso, Zimbabue e Cazaquistão. Se comunicam entre si.<p>
+                </div>
+            </div>
+    </section>
+
+    <section class="conteudo3">
+        <div class="projeto3">        
+            <div class="quadro3 ">
+                <p>Nesse projeto, há duas infraestruturas diferentes, uma residencial(da esquerda) e outra empresarial(direita). Elas conseguem acessar o servidor DNS que está no topo.<p>
+            </div>
+            <figure>
+                <img heigth="100%" width="100%" src="/img/DMZ1.png">
+                <figcaption>Projeto 2</figcaption>
+            </figure>
+        </div>
+</section>
+
+<section class="conteudo2">
+    <div class="projeto2">        
+        <figure>
+            <img heigth="100%" width="100%" src="/img/projeto_gusta_cisco.gif">
+            <figcaption>Projeto 3</figcaption>
+        </figure>
+        <div class="quadro2">
+            <p>Nesse projeto, realizamos um pequeno projeto que envolvia a configuração de IP e MAC de cada equipamento, interliga-los de maneira correta e tentar conexão. No caso, a comunicação entre uma sala e a outra deveria falhar.<p>
+        </div>
+    </div>
+</section>
+
+    <footer>
+       
+        <div class="rodape">
+            <figure>
+                <a href="https://sorocaba.sp.senai.br/">
+                    <img src="/img/senai-logo.png">
+                </a>    
+            </figure>
+        </div>
+
+        <div class="frase_rodape">
+            <h1> Direitos reservados ao SENAI - Gusta Oliver </h1>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/redes/red.js"></script>
+    
+
+</body>
+</html>

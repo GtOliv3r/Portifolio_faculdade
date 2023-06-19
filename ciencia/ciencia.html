@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Ciência de Dados</title>
+    <link rel="stylesheet" href="/ciencia/ciencia.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+          
+          <!--  <div class="imagem">
+            <img src="/img/senai-logo-cinza.png">
+          </div>-->
+
+            <div class="flex">
+                
+                
+                <!--<a href="inicio.html"><img src="/inicio/img/fotoboacortada.jpg"></a>-->
+
+                    <div class="btn-inicio">
+                        <a href="/inicio/inicio.html"><button>INÍCIO</button></a>
+                    </div> <!--btn-inicio-->
+
+                    <nav>
+                        <ul>
+                            
+                            <li><a href="/lin_progr/ling_prog.html">Linguagem de Programação</a></li>
+                            <li><a href="/auto/auto.html">Automação</a></li>
+                            <li><a href="/redes/rede.html">Redes</a></li>
+                            <li><a href="/banco/banco.html">Banco de Dados</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="btn-contato">
+                        <a href="/ciencia/ciencia.html"><button>TOPO</button></a>
+                    </div> <!--btn-contato-->
+
+
+            </div> <!--flex-->
+
+        </div> <!--container-->
+
+
+    </header>
+
+    <section class="banner"> 
+        <h1><span class="auto-escrita"></span></h1>
+    </section>
+
+    <div class="quadro0"></div>
+
+   
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont1')">Amostragem</button><span style="color: red;"> (Click)</span></h1>
+        <div id="cont1">
+            <ul>
+                <li><span>População</span> - Total de elementos a serem analisados.</li>
+                <li><span>Amostra</span> - É porção de elemento escolhida aleatoriamente a partir da população.</li>
+                <li><span>Inviesar</span> - Pegar uma amostra que não representa um total da quantia.</li>
+                <li><span>Censo</span> -  levantamento de todos os dados da população.</li>
+            </ul>
+                <br>
+                <h1 class="tit2"><button onclick="toggle('cont11')">QUANDO DEVO USAR AMOSTRAGEM?</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont11">
+                    <ul>
+                        <li><span>Economia</span> - Economiza tempo e dinheiro.</li>
+                        <li><span>Rapidez no processamento</span> - Menos dados, mais rapidez.</li>
+                        <li><span>Testes destrutivos</span> - Exemplo de fábrica de carro, ensaio de tensão sobre um amortecedor de carro, não é feito em todos os amortecedores porque se não, não haveria amortecedores para vender.</li>
+                    </ul>
+                </div>
+                <br>
+                <h1 class="tit2"><button onclick="toggle('cont12')">QUANDO NÃO DEVEMOS USAR A AMOSTRAGEM?</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont12">
+                    <ul>
+                        <li><span>População pequena</span> - População reduzida que, no contexto da pesquisa, pode não conseguir um resultado conclusivo.</li>
+                        <li><span>Características de fácil mensuração</span> - É fácil a coleta desse dado em específico, então vale a pena fazer em 100% da população.</li>
+                        <li><span>Necessidades Políticas</span> - Em casos políticos, é preciso ter 100% dos dados de toda a população, pois interfere na estratégia ou algo do tipo.</li>
+                        <li><span>Necessidade de alta precisão</span> - Precisão necessita da coleta total de dados, ou a maior parte dele, então não há como fazer isso por amostragem.</li>                    </ul>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont2')">COMO DETERMINAR O TAMANHO DA AMOSTRA?</button><span style="color: red;"> (Click)</span></h1>
+            
+            <div id="cont2">
+                <br><br>
+            <figure>
+                <img src="/img/tamanho_da_amostra.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+                <h1 class="tit"><button onclick="toggle('cont3')">Matemática e estatística descritiva</button><span style="color: red;"> (Click)</span></h1>
+                    <ul id="cont3">
+                        <li><span>Descrever dados ou fatos</span></li>
+                        <li><span>Etapa inicial de um processo estatístico</span></li>
+                        <li><span>Definir uma população ou amostra</span></li>
+                    </ul>   
+            </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont4')"> Categorias de amostra</button><span style="color: red;"> (Click)</span></h1>
+        <div id="cont4">
+            
+            <h1 class="tit2"><button onclick="toggle('cont41')">Probabilístico:</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont41">
+                    <ul>
+                        <li><span>Aleatória</span> - Cada elemento da população tem a mesma possibilidade de ser escolhido.</li>
+                        <li><span>Sistemática</span> - É feita uma seleção aleatória do primeiro elemento da amostra e em seguida os demais são escolhidos através de intervalos fixos ou sistemáticos.</li>
+                        <li><span>Estratificada</span> - Separa os elementos em grupos homogêneos e em seguida é feita uma amostra aleatória em cada grupo (estrato).</li>
+                    </ul>
+                </div>
+                <h1 class="tit2"><button onclick="toggle('cont42')">Não Probabilístico:</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont42">
+                    <ul>
+                        <li><span>Conveniência</span> - Pessoas são selecionadas porque, por algum motivo, elas estão mais disponíveis do que outras. Por exemplo, um chefe do setor 1 e outro chefe do setor 2 foram escolhidos porque a chefia os indicou.</li>
+                        <li><span>Voluntária</span> - Amostra composta por pessoas que desejam responder ou participar do estudo/pesquisa.</li>
+                        <li><span>Cota</span> - Estabelecendo um limite de pessoas, podendo ser aleatório ou não, e finalizando quando o número de pessoas for atingido.</li>
+                    </ul>
+                </div>
+                
+                <h1 class="tit2"><button onclick="toggle('cont43')">Subconjuntos</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont43">
+                    <ul>
+                        <li><span>Finitos</span> - Quando a população é limitada e pode ser contada.</li>
+                        <li><span>Infinitos</span> - Quando a população é infinita e não pode ser contada.</li>
+                        <p>Os componentes que compõem os subconjuntos são chamados de variáveis são os campos que iremos trabalhar na análise.</p>                  
+                    </ul>
+                </div>
+
+                <h1 class="tit2"><button onclick="toggle('cont44')">Variáveis</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont44">
+                    <ul>
+                        <li><span>Quantitativa</span> - Dados que são expressos numericamente, como quantas pessoas votaram, quantos esportes foram praticados, quantas horas foram estudadas em determinada matéria.</li>
+                        <li><span>Qualitativa</span> - Dados que são normalmente textuais, descrevendo características, como a etnia, o esporte favorito, o sexo da pessoa.</li>                 
+                    </ul>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont5')">Escalas de medição </button><span style="color: red;"> (Click)</span></h1>
+        <div id="cont5">
+            
+            <h1 class="tit2"><button onclick="toggle('cont51')">Escala nominal</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont51">
+                    <p>Escalas onde as opções são dispostas, mas somente uma pode ser escolhida.</p>
+                </div>
+                <h1 class="tit2"><button onclick="toggle('cont52')">Escala Ordinal</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont52">
+                    <p>Escalas com objetivo de categorizar com base em comparação, por exemplo, escalas para deixar opinião.</p>
+                </div>
+                
+                <h1 class="tit2"><button onclick="toggle('cont53')">Escala Intervalar</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont53">
+                    <p>Escalas que é possível medir o intervalo, como qual nota você dá a um produto, 0 - 10.</p>
+                </div>
+
+                <h1 class="tit2"><button onclick="toggle('cont54')">Escala de Razão</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont54">
+                    <p>Escalas parecidas com a do tipo intervalar, porém que tem a opção de zero absoluto, serve para comparar proporções.</p>
+                </div>
+            </div>   
+        </div>
+    </section>
+    
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont6')">Tendencia Central</button><span style="color: red;"> (Click)</span></h1>
+        <div id="cont6">
+
+            <p><span>Moda</span> - valor que aparece com maior frequência no conjunto. Um conjunto de dados pode ser:</p>
+            
+            <h1 class="tit2"><button onclick="toggle('cont61')">Modal</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont61">
+                    
+            <figure>
+                <img src="/img/modal.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+                </div>
+                <h1 class="tit2"><button onclick="toggle('cont62')">Bimodal</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont62">
+                    <figure>
+                <img src="/img/bimodal.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+                </div>
+                
+                <h1 class="tit2"><button onclick="toggle('cont63')">Polimodal</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont63">
+                    <figure>
+                <img src="/img/polimodal.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+                </div>
+
+                <h1 class="tit2"><button onclick="toggle('cont64')">Amodal</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont64">
+                    <figure>
+                <img src="/img/amodal.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+                </div>
+
+                <h1 class="tit2"><button onclick="toggle('cont65')">Mediana</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont65">
+                <figure>
+                <img src="/img/mediana.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                </figure>
+                </div>
+
+                <h1 class="tit2"><button onclick="toggle('cont66')">Média Aritmética</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont66">
+                   <figure>
+                <img src="/img/media_arit.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+                </div>
+
+                <h1 class="tit2"><button onclick="toggle('cont67')">Média Ponderada</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont67">
+                    <p>Média levando em conta os pesos de cada elemento.</p>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont7')">PERCENTIL E QUARTIL </button><span style="color: red;"> (Click)</span></h1>
+        <div id="cont7">
+            <p>Também fazem parte de Tendecia Central.</p>
+            <h1 class="tit2"><button onclick="toggle('cont71')">Percentil</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont71">
+                    <p>Medidas que dividem a amostra em uma escala de 0% a 100%.</p>
+                </div>
+                <h1 class="tit2"><button onclick="toggle('cont72')">Quartil</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont72">
+                    <p>Divide o conjunto de dados em 4 partes. Cada uma representando 25% da amostra. 1º quartil, 2º, 3º e 4º.</p>
+                </div> 
+            </div>   
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont8')">MEDIDAS DE DISPERSÃO</button><span style="color: red;"> (Click)</span></h1>
+        <div id="cont8">
+            <h1 class="tit2"><button onclick="toggle('cont81')">Amplitude</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont81">
+                    <p>Definido através da diferença entre um valor máximo e o mínimo do conjunto de dados. Nos mostra o quão distante valor máximo estou no mínimo está do outro.</p>
+                <br>
+                <figure>
+                    <img src="/img/amplitude.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                </figure>
+                </div>
+                <h1 class="tit2"><button onclick="toggle('cont82')">Variância</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont82">
+                    <p>É a medida que procura o valor que nos mostra o quão distante cada um dos valores estão do valor central.</p>
+                    <br>
+                <figure>
+                    <img src="/img/variancia.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                </figure>
+                </div>
+                <h1 class="tit2"><button onclick="toggle('cont83')">Desvio Padrão</button><span style="color: red;"> (Click)</span></h1> 
+            <br>
+                <div id="cont83">
+                    <p>É a medida de dispersão que nos trás um valor que mostra o quão disperso estão os valores do conjunto de dados.</p>
+                    <br>
+                <figure>
+                    <img src="/img/desvio.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                </figure>
+                </div> 
+            </div>   
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button onclick="toggle('cont9')">TESTE DE HIPÓTESE</button><span style="color: red;"> (Click)</span></h1>
+                <div id="cont9">
+                    <p>Quando utilizamos uma amostra para encontrar dados estatísticos que representam a população envolvido no conjunto, estamos fazendo uma Inferência Estatística, então precisamos provar essa se essa análise realiza é verdadeira ou não. Para isso utilizamos o teste. Deixarei um vídeo <a href="https://youtu.be/qKQuCYkt3BI">aqui</a> que explica sobre o teste de QUI-QUADRADO. Há vários outros TESTES também.</p>
+                    
+            </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont10')">INFERÊNCIA</button><span style="color: red;"> (Click)</span></h1>
+        <div id="cont10">
+            <p>Também fazem parte de Tendecia Central.</p>
+            <h1 class="tit2"><button onclick="toggle('cont101')">Distribuição probabilística binomial</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont101">
+                    <p>Algoritmo que retorna a porcentagem de todas as possibilidades num conjunto de dados, como no exemplo das moedas que está no NOTION, baseado em 100 jogadas de moeda, há 50% de 50 das jogadas serem cara. Mas qual porcentagem em de 40 das 100 serem cara? Aproximadamente 15%.</p>
+                </div>
+                <h1 class="tit2"><button onclick="toggle('cont102')">Regressão Logística</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont102">
+                    <p>É um algoritmo que procura traçar a curva que classifica dados de um conjunto conhecido, mas diferentes.</p>
+                </div> 
+            </div>   
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont111')">funções</button><span style="color: red;"> (Click)</span></h1>
+        <div id="cont111">
+            <p>Relaciona elementos de dois conjuntos, onde para cada valor de X, existe uma correspondência única para Y.</p>
+            <h1 class="tit2"><button onclick="toggle('cont112')">tipos de funções</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont112">
+                    <ul>
+                        <li><span>Função Injetora</span> - Para cada elemento de um grupo X, pode ser que no outro grupo, não exista correspondência, ou seja, pode ser que alguma do segundo grupo fique sem correspondência.</li>
+                        <li><span>Função Sobrejetora</span> - Para cada elemento de um grupo X, pode ser que o valor correspondido do grupo Y seja o mesmo para mais de um valor X.</li>
+                        <li><span>Função Bijetora</span> - É os dois tipos anteriores juntos.</li>
+                    </ul>
+                </div>
+                <h1 class="tit2"><button onclick="toggle('cont113')">Funções Polinomiais</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont113">
+                    <ul>
+                        <li><span>Monômio</span> - 1 termo somente.</li>
+                        <li><span>Binômio</span> - 2 termos.</li>
+                        <li><span>Trinômio</span> - 3 termos.</li>
+                        <li><span>Polinômio </span> - 4 termos ou mais.</li>
+                    </ul>
+                </div>
+
+                <h1 class="tit2"><button onclick="toggle('cont114')">Função Afim</button><span style="color: red;"> (Click)</span></h1>
+                
+            <br>
+                <div id="cont114">
+                    <p>Aprendemos a calcular função de 1º grau, achar o Y. Também entendemos como achar a lei da função.</p>
+                    <br>
+                    <figure>
+                        <img src="/img/afim.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                    </figure>
+                </div> 
+                <h1 class="tit2"><button onclick="toggle('cont115')">Função Quadrática</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont115">
+                    <p>Também aprendemos a calcular funções de 2º grau, e para isso, praticamos usando Bhaskara, Soma e Produto e usando os Produtos Notáveis.</p>
+                    <br>
+                    <figure>
+                        <img src="/img/quadratica.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                    </figure>
+                </div> 
+            </div>   
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont120')">PERCENTIL E QUARTIL </button><span style="color: red;"> (Click)</span></h1>
+        <div id="cont120">
+            <p>Também fazem parte de Tendecia Central.</p>
+            <h1 class="tit2"><button onclick="toggle('cont121')">Função Exponencial</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont121">
+                    <p>Função que tem base maior que zero e diferente de 1, e também que possui a variável no expoente. Aprendemos a calcular através de um exercício onde precisamos calcular o montante.</p>
+                    <br>
+                    <figure>
+                        <img src="/img/exponencial.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                    </figure>
+                </div>
+                <h1 class="tit2"><button onclick="toggle('cont122')">Funções Logarítmicas</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont122">
+                    <p>Base diferente de 1 e tem que ser positiva, o Y tem que ficar positivo.</p>
+                    <br>
+                    <figure>
+                        <img src="/img/logaritmicas.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                    </figure>
+                </div> 
+                <h1 class="tit2"><button onclick="toggle('cont123')">Funções Trigonométricas</button><span style="color: red;"> (Click)</span></h1>
+            <br>
+                <div id="cont123">
+                    <p>Funções cujo o Y( contradominio) seja alguma razão Trigonométricas, tendo o ângulo como variável.</p>
+                    <ul>
+                        <li><span>Função SENO</span> - F(X) = SEN(X)</li>
+                        <li><span>Função COSSENO</span> - F(X) = COS(X)</li>
+                        <li><span>Função TANGENTE</span> - F(X) = TAN(X)</li>
+                    </ul>
+                    <br>
+                    <figure>
+                        <img src="/img/trigon.png" width="100%" height="100%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+                    </figure>
+                </div> 
+            </div>   
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont130')">LIMITES</button><span style="color: red;"> (Click)</span></h1>
+            
+            <div id="cont130">
+                <p>O  limite é utilizado para descobrir o comportamento de uma função a medida que sua variável independente se aproxima de um determinado valor. É essencial para poder calcular derivada que  é o próximo tópico. Na imagem abaixo podemos ver limite lateral da função(x) :</p>
+                <br>
+            <figure>
+                <img src="/img/limite.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont140')">DERIVADA</button><span style="color: red;"> (Click)</span></h1>
+            <div id="cont140">
+                <p>É a taxa de variação de função y = f(x) em relação a X. Ela descobre o o coeficiente angular da equação da reta tangente a um ponto específico em X. fizemos muitos exercícios sobre derivada, alguns davam indeterminado, e para resolvermos necessitamos fatorar, usar bhaskara e outros métodos.</p>
+
+                <br>
+            <figure>
+                <img src="/img/derivada.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="conteudo1">
+        <div class="quadro1">
+            <h1 class="tit"><button  onclick="toggle('cont150')">INTEGRAL</button><span style="color: red;"> (Click)</span></h1>
+            <div id="cont150">
+                <p>Serve para acharmos a área de uma curva no plano cartesiano. Por meio de formas geométricas básicas, como retângulos, podemos ter uma aproximação dessa área, mas para achar realmente o valor, o cálculo é mais complexo. Estamos finalizando o conteúdo ainda, mas já praticamos em alguns exercícios a integral definida (integral com intervalo). </p>
+
+                <br>
+            <figure>
+                <img src="/img/integral1.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+            <br>
+            <figure>
+                <img src="/img/integral2.png" width="60%" height="60%" style="display: block; margin-bottom: 15px;margin-left: auto; margin-right: auto;">
+            </figure>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="conteudo2">
+            <div class="projeto2">        
+                <figure>
+                    <video heigth="100%" width="100%" controls src="/ciencia/video/COLAB.mp4"></video>
+                    <figcaption>Projeto</figcaption>
+                </figure>
+                <div class="quadro2">
+                    <p style="color: aliceblue;font-weight: bold;">COLAB de Ciência de Dados</p><br>
+                    <p>Nesse COLAB, pegamos o BD do TITANIC original e usamos ele para vizualizar os conteúdos de matemática estatística e plotar gráficos.<p>
+                </div>
+            </div>
+    </section>
+
+
+    <footer>
+       
+        <div class="rodape">
+            <figure>
+                <a href="https://sorocaba.sp.senai.br/">
+                    <img src="/img/senai-logo.png">
+                </a>    
+            </figure>
+        </div>
+
+        <div class="frase_rodape">
+            <h1> Direitos reservados ao SENAI - Gusta Oliver </h1>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/ciencia/cienc.js"></script>
+    
+
+</body>
+</html>
