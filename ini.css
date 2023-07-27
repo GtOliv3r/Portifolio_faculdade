@@ -10,7 +10,7 @@
 
 /* Tamanho da página*/
 html {
-    height: 200vh;
+    height: 140vh;
     background-image: url(/img/fundo_original.jpeg);
     background-position: center;
     background-size: cover;
