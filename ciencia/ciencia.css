@@ -8,9 +8,9 @@
     font-family: 'Barlow', sans-serif;
 }
 
-/* Tamanho da página*/
+/* Tamanho da página view em 100% */
 html {
-    height: 540vh;
+    height: 360vh;
     background-image: url(/img/ciencia.png);
     background-position: center;
     background-size: cover;
