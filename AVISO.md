@@ -1,1 +1,3 @@
-PROFESSORES, ABRAM A PASTA "Portifolio_faculdade" PELO VS CODE!!! POR FAVOR, PARA GARANTIR QUE O PROJETO ESTEJA COMPLETO USANDO O CS E JS!!
+Também hospedei o site do portfólio no Netlify, segue link:
+
+https://port-gustavoliver.netlify.app/
