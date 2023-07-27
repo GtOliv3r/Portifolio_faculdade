@@ -8,9 +8,9 @@
     font-family: 'Barlow', sans-serif;
 }
 
-/* Tamanho da página*/
+/* Tamanho da página view em 100% */ 
 html {
-    height: 630vh;
+    height: 470vh;
     background-image: url(/img/ling_prog.jpg);
     background-position: center;
     background-size: cover;
